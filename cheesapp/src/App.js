@@ -1,4 +1,3 @@
-// App.js
 import React, { useEffect, useState, createContext, useContext } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import './App.css';
@@ -17,6 +16,34 @@ const AudioControls = () => {
     >
       {isPlaying ? "🔇 Mute" : "🔊 Play Music"}
     </button>
+  );
+};
+
+// Landing Page
+const LandingPage = () => {
+  const navigate = useNavigate();
+  const { setIsPlaying } = useContext(AudioContext);
+  
+  const handleStart = () => {
+    setIsPlaying(true);
+    navigate('/home');
+  };
+  
+  return (
+    <div 
+      className="page" 
+      style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/start.jpg)` }}
+    >
+      <div className="content">
+        <h1>Are You Ready to Start the Journey?</h1>
+      </div>
+      <button 
+        onClick={handleStart} 
+        className="next-button"
+      >
+        Start Journey
+      </button>
+    </div>
   );
 };
 
@@ -102,7 +129,8 @@ function App() {
     <AudioContext.Provider value={{ isPlaying, setIsPlaying }}>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/home" element={<Home />} />
           <Route 
             path="/section1" 
             element={
@@ -111,7 +139,7 @@ function App() {
                 title="Section 1"
                 text="This is the first section of our journey. Here we explore the beginning of our story."
                 nextPath="/section2"
-                prevPath="/"
+                prevPath="/home"
               />
             } 
           />
