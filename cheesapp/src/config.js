@@ -24,39 +24,72 @@ export const sectionConfig = [
     },
     {
       path: "/1",
-      background: "section0.jpg",
+      background: "1.jpg",
       // This section has no content, just background and navigation
     },
     {
       path: "/2",
-      background: "section1.jpg",
+      background: "2.jpg",
       // This section has no content, just background and navigation
     },
     {
-      path: "/section2",
-      background: "section2.jpg",
-      content: {
-        style: {
-          backgroundColor: "rgba(0, 0, 0, 0.5)",
-          borderRadius: "12px",
-          padding: "30px",
-          position: "absolute",
-          top: "30%",
-          right: "10%",
-          maxWidth: "400px"
-        },
-        titleStyle: {
-          fontSize: "2.5rem",
-          color: "#ffd700",
-          fontFamily: "'Georgia', serif"
-        },
-        textStyle: {
-          fontSize: "1.1rem",
-          color: "#ffffff",
-          lineHeight: "1.8"
-        },
-        title: "Section 2",
-        text: "This section has content with custom styling."
-      }
+      path: "/3",
+      background: "3.jpg",
+      
+    },
+    {
+      path: "/4",
+      background: "4.jpg",
+      
+    },
+    {
+      path: "/5",
+      background: "5.jpg",
+      
+    },
+    {
+      path: "/6",
+      background: "6.jpg",
+      
+    },
+    {
+      path: "/7",
+      background: "7.jpg",
+      
+    },
+    {
+      path: "/8",
+      background: "8.jpg",
+      
+    },
+    {
+      path: "/9",
+      background: "9.jpg",
+      
+    },
+    {
+      path: "/10",
+      background: "10.jpg",
+      
+    },
+    {
+      path: "/11",
+      background: "11.jpg",
+      
+    },
+    {
+      path: "/12",
+      background: "12.jpg",
+      
+    },
+    {
+      path: "/13",
+      background: "13.jpg",
+      
+    },
+    {
+      path: "/14",
+      background: "14.jpg",
+      
     }
   ];
