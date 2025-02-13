@@ -1,4 +1,5 @@
-/* App.css */
+
+/* Base styles remain the same, but can be overridden by inline styles */
 .page {
   min-height: 100vh;
   background-size: cover;
@@ -19,16 +20,9 @@
   max-width: 600px;
   margin: 20px;
 }
+/* App.css */
 
-.content h1, .content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
 
-.content p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
 
 .back-button {
   position: absolute;
