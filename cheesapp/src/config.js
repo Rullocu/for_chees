@@ -18,7 +18,7 @@ export const sectionConfig = [
           color: "rgb(255, 255, 255)",
           fontFamily: "'Georgia', serif"
         },
-        title: "Do you want to hear a story?",
+        title: "Do you want to hear a love story?",
         buttonText: "Tell me the story!"
       }
     },
@@ -39,12 +39,12 @@ export const sectionConfig = [
     },
     {
       path: "/4",
-      background: "4.jpg",
+      background: "4.png",
       
     },
     {
       path: "/5",
-      background: "5.jpg",
+      background: "5.png",
       
     },
     {
@@ -54,7 +54,7 @@ export const sectionConfig = [
     },
     {
       path: "/7",
-      background: "7.jpg",
+      background: "7.png",
       
     },
     {
@@ -91,5 +91,49 @@ export const sectionConfig = [
       path: "/14",
       background: "14.jpg",
       
+    },
+    {
+      path: "/15",
+      background: "15.jpg",
+    },
+    {
+      path: "/16",
+      background: "16.jpg",
+    },
+    {
+      path: "/17",
+      background: "17.jpg",
+    },
+    {
+      path: "/18",
+      background: "18.jpg",
+    },
+    {
+      path: "/19",
+      background: "19.jpg",
+    },
+
+    {
+      path: "/end",
+      background: "end.jpg",
+      content: {
+        style: {
+          backgroundColor: "rgb(255, 121, 215)",
+          borderRadius: "20px",
+          padding: "40px",
+          position: "absolute",
+          top: "40%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          maxWidth: "800px"
+        },
+        titleStyle: {
+          fontSize: "1.5rem",
+          color: "rgb(255, 255, 255)",
+          fontFamily: "'Georgia', serif"
+        },
+        title: "I just want to say, happy Valentine's Day Beatrice ! Thank you for meeting me!I Love You",
+        
+      }
     }
   ];
